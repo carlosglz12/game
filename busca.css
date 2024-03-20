@@ -1,0 +1,90 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  display: grid;
+  border: 1px solid #d6d6d6;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(226, 240, 255, 0.5);
+  margin-top: 20px;
+  grid-gap: 10px;
+}
+
+.cell {
+  background: rgba(23, 111, 130, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(23, 111, 130, 0.3);  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cell:hover {
+  background-color: #effdff;
+  transform: scale(1.1);
+}
+
+.hidden {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+
+.mine {
+  background-color: transparent;
+  background-image: url('mine.png');
+  background-size: contain;
+  background-position: center;
+}
+
+.rules {
+  background-color: #fff;
+  border: 1px solid #649dff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(174, 229, 255, 0.5);
+  text-align: center;
+  max-width: 300px;
+}
+
+.number {
+  color: blue;
+  font-weight: bold;
+}
+
+.flag {
+  background-color: yellow;
+  background-image: url('flag.png');
+  background-size: cover;
+}
+.btn-1 {
+  border: none;
+  background-color: #9abaff;
+  box-shadow: 0 0 5px #97c6ef;
+  padding: 5px;
+  border-radius: 7px;
+  width: 200px;
+  height: 50px;
+}
+.btn-1:hover {
+   box-shadow: 0 0 10px #9abaff, 0 0 20px #9abaff, 0 0 20px #fff inset;
+}
