@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscaminas</title>
+    <link rel="stylesheet" href="busca.css">
+</head>
+<body>
+    <div class="rules">
+        <h2>Reglas del Buscaminas:</h2>
+        <p>1. Haz clic izquierdo en una celda para descubrirla.</p>
+        <p>2. Haz clic derecho en una celda para colocar o quitar una bandera como marcador de mina.</p>
+        <p>3. El juego termina si descubres una mina.</p>
+        <p>4. Descubre todas las celdas sin minas para ganar.</p>
+    </div>
+    <div class="container"></div>
+    <br>
+    <button  id="resetButton" style="display: none" class="custom-btn btn-1">Reiniciar Juego</button>
+    <br>
+    <div id="lossMessage" class="message" style="display: none;">¡Perdiste!</div> <!-- Mensaje de pérdida -->
+    <script src="minas.js"></script>
+</body>
+</html>
